@@ -1,0 +1,2 @@
+protoc.exe -I ..\..\protos --grpc_out=..\..\protos --plugin=protoc-gen-grpc=F:\pilot\grpc-basic-check\tools\grpc\grpc_cpp_plugin.exe ..\..\protos\Auth.proto
+protoc.exe -I ..\..\protos --cpp_out=..\..\protos ..\..\protos/Auth.proto

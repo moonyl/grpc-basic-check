@@ -1,0 +1,6 @@
+Debug/
+grpc/
+node-client/node_modules/
+x64/
+.vs/
+*.user

@@ -1,0 +1,24 @@
+syntax = "proto3";
+
+package google.protobuf;
+
+option csharp_namespace = "Google.Protobuf.WellKnownTypes";
+option cc_enable_arenas = true;
+option go_package = "github.com/golang/protobuf/ptypes/auth";
+option java_package = "com.google.protobuf";
+option java_outer_classname = "AuthProto";
+option java_multiple_files = true;
+option objc_class_prefix = "GPB";
+
+service Authentication	{
+  rpc Login(Account) returns (Success)	{}
+}
+
+message Account {
+  string user = 1;
+  string password = 2;
+}
+
+message Success {
+  bool ok = 1;
+}
